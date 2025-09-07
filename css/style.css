@@ -520,7 +520,7 @@
 
 .my-projects {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 20px 0 20px;
     font-family: "Marlide-Light", serif;
     background: #FFFCE8;
     color: #0D7C66;
@@ -542,7 +542,7 @@
     grid-template-columns: repeat(2, 1fr); /* luôn 2 cột */
     gap: 80px 60px;
     justify-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 65px;
 }
 
     .my-projects-grid > :last-child:nth-child(2n+1) {

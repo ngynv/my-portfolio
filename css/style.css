@@ -1,0 +1,1363 @@
+﻿body {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: "Marlide-Light";
+    src: url("../font/MARLIDEDISPLAY_LIGHT.TTF") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Marlide-Regular";
+    src: url("../font/MARLIDEDISPLAY_REGULAR.TTF") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Marlide-Medium";
+    src: url("../font/MARLIDEDISPLAY_MEDIUM.TTF") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Marlide-Bold";
+    src: url("../font/MARLIDEDISPLAY_BOLD.TTF") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Amoresa";
+    src: url("../font/AMORESA.TTF") format("truetype");
+    font-style: normal;
+}
+
+.homepage-cua-vy {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+}
+
+.portfolio-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    text-align: center;
+    background: #fffce8;
+    height: 706px;
+}
+
+.portfolio-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-roles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.portfolio-role {
+    border: 1px solid #0d7c66;
+    border-radius: 20px;
+    padding: 12px 32px;
+    background: transparent;
+    font-family: "Marlide-Light";
+    font-size: 30px;
+    color: #0d7c66;
+}
+
+.portfolio-hero {
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-subtitle {
+    font-family: "Marlide-Light";
+    font-size: 100px;
+    color: #0d7c66;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 65px 0;
+}
+
+.portfolio-title {
+    font-family: "Amoresa";
+    font-size: 250px;
+    font-weight: 100;
+    color: #0d7c66;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 280px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 20px;
+}
+
+.portfolio-icon {
+    position: relative;
+    top: -50px;
+    margin-left: 10px;
+    line-height: 1;
+}
+
+    .portfolio-icon svg {
+        display: block;
+        animation: spin 4s linear infinite; /* xoay vô hạn */
+        transform-origin: 50% 50%; /* xoay quanh tâm */
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.portfolio-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .portfolio-footer time {
+        font-family: "Marlide-Light";
+        font-size: 50px;
+        margin-right: 20px;
+        color: #0D7C66;
+    }
+
+.portfolio-line {
+    flex: 1;
+    height: 1px;
+    background: #0D7C66;
+}
+
+/*=================== MARQUEE ABOUT-ME =====================*/
+
+.aboutme {
+    width: 100%;
+    height: 136px;
+    background-color: #0d7c66;
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutme-component {
+    position: relative;
+    height: 57px;
+    top: 39px;
+}
+
+.aboutme-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 15s linear infinite;
+    gap: 234px;
+}
+
+.aboutme-frame {
+    display: inline-flex;
+    align-items: center;
+    gap: 234px;
+    white-space: nowrap;
+}
+
+.aboutme-text {
+    font-family: "Marlide-Light";
+    color: #fffce8;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+/* animation chạy liên tục */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/*================== ABOUT ME ====================*/
+.introduce {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.introduce-container {
+    max-width: 90%;
+    height: 100vh;
+    margin: 55px auto;
+    position: relative;
+}
+
+.introduce-img {
+    position: absolute;
+    width: 426px;
+    height: 588px;
+    top: 36px;
+    right: 0;
+}
+
+.introduce-header {
+    position: absolute;
+    width: 812px;
+    height: 392px;
+    top: 0;
+    left: 4px;
+}
+
+.introduce-text {
+    width: 732px;
+    margin: 0;
+    font-family: 'Amoresa';
+    color: #0d7c66;
+    font-size: 250px;
+    letter-spacing: 0;
+    line-height: normal;
+    font-weight: 100;
+}
+
+.introduce-group-1 {
+    position: absolute;
+    width: 104px;
+    height: 60px;
+    top: 6px;
+    left: 0;
+}
+
+.introduce-name-1 {
+    height: 61px;
+    background-color: #fffce8;
+    border-radius: 20px;
+    border: 0.5px solid;
+    border-color: #0d7c66;
+}
+
+.introduce-text-name-1 {
+    font-family: "Marlide-Light";
+    color: #0d7c66;
+    display: flex;
+    font-size: 50px;
+    letter-spacing: 0;
+    justify-content: center;
+    line-height: normal;
+    text-align: center;
+}
+
+.introduce-group-2 {
+    position: absolute;
+    width: 351px;
+    height: 60px;
+    top: 260px;
+    left: 470px;
+}
+
+.introduce-name-2 {
+    position: relative;
+    height: 61px;
+    background-color: #fffce8;
+    border-radius: 20px;
+    border: 0.5px solid;
+    border-color: #0d7c66;
+}
+
+.introduce-text-name-2 {
+    font-family: "Marlide-Light";
+    color: #0d7c66;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.introduce-description {
+    position: absolute;
+    width: 715px;
+    top: 424px;
+    left: 0;
+    font-family: "Marlide-Light";
+    color: #0d7c66;
+    font-size: 30px;
+    text-align: justify;
+    letter-spacing: 1.50px;
+    line-height: normal;
+}
+
+/*=============== EDUCATION - SOFT SKILL - SKILLS ================*/
+
+/* Layout chính */
+.cv-frame {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.cv-container {
+    max-width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+/* LEFT side */
+.cv-left {
+    overflow: visible;
+    width: 40%;
+    background: #0d7c66;
+    padding: 40px 60px;
+    color: #fffce8;
+    font-family: "Marlide-Light", Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.cv-card {
+    font-family: 'Marlide-Light';
+    position: relative;
+    padding-top: 110px;
+}
+
+.cv-title {
+    position: absolute;
+    top: 20px;
+    left: -265px;
+    background: #fffce8;
+    color: #0d7c66;
+    font-family: "Amoresa", Helvetica, serif;
+    font-size: 42px;
+    padding: 10px 40px;
+    border-radius: 12px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(13, 124, 102, 0.08);
+    z-index: 2;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 380px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.cv-content p {
+    margin: 25px 0;
+    font-size: 30px;
+}
+
+.cv-skills {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 35px 140px;
+}
+
+    .cv-skills li {
+        font-size: 30px;
+    }
+
+/* RIGHT side */
+.cv-right {
+    width: 50%;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    color: #fff;
+}
+
+/* Side titles dọc */
+.cv-side-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: "Amoresa", Helvetica;
+    font-size: 42px;
+    background: #fffce8;
+    color: #0d7c66;
+    border-radius: 10px;
+    padding: 40px 10px;
+    position: absolute;
+    width: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 260px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.cv-tech .cv-side-title {
+    left: 0;
+    top: 40px;
+}
+
+.cv-contact .cv-side-title {
+    right: 0;
+    bottom: 40px;
+    transform: rotate(0deg);
+}
+
+/* Tech stack */
+.cv-tech {
+    background: transparent;
+    border-radius: 20px;
+    padding: 40px 20px 20px 80px; /* chừa chỗ cho title dọc */
+}
+
+.cv-tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 70px;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+    .cv-tech-icons img {
+        width: 80px;
+        height: auto;
+    }
+
+/* Contact */
+.cv-contact {
+    background: transparent;
+    padding: 40px 20px 20px 0px;
+}
+
+.cv-contact-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+    .cv-contact-list li {
+        font-family: "Marlide-Light";
+        font-size: 30px;
+        color: #0d7c66;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 40px;
+    }
+
+    .cv-contact-list img {
+        width: 30px;
+        height: auto;
+    }
+
+    .cv-contact-list a {
+        color: #0d7c66;
+        text-decoration: none;
+    }
+
+        .cv-contact-list a:hover {
+            text-decoration: underline;
+        }
+
+/*=================== MARQUEE MY-PROJECTS =====================*/
+
+.myprojects {
+    width: 100%;
+    height: 136px;
+    background-color: #0d7c66;
+    overflow: hidden;
+    position: relative;
+    margin-top: 55px;
+}
+
+.myprojects-component {
+    position: relative;
+    height: 57px;
+    top: 39px;
+}
+
+.myprojects-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 15s linear infinite;
+    gap: 234px;
+}
+
+.myprojects-frame {
+    display: inline-flex;
+    align-items: center;
+    gap: 234px;
+    white-space: nowrap;
+}
+
+.myprojects-text {
+    font-family: "Marlide-Light";
+    color: #fffce8;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+/* animation chạy liên tục */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/*=================== MY-PROJECTS =====================*/
+
+.my-projects {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: "Marlide-Light", serif;
+    background: #FFFCE8;
+    color: #0D7C66;
+}
+
+/* Tiêu đề nhóm (UI Design, Website Design) */
+.my-projects-title {
+    font-size: 85px;
+    letter-spacing: 8px;
+    font-style: normal;
+    margin: 0px 0 120px;
+    font-family: "Marlide-Light", serif;
+}
+
+/* Lưới card */
+.my-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* luôn 2 cột */
+    gap: 80px 60px;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+    .my-projects-grid > :last-child:nth-child(2n+1) {
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+/* Card project */
+.my-projects-card {
+    background-color: transparent;
+    border: 1px solid #0D7C66;
+    border-radius: 20px;
+    padding: 60px 25px 25px;
+    width: 417px;
+    height: 420px;
+    position: relative;
+    text-align: center;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+    .my-projects-card:hover {
+        background: #FFFCE8;
+        border: none;
+        box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
+    }
+
+        .my-projects-card:hover .frame-icon svg {
+            animation: spin 4s linear infinite; /* xoay vô hạn */
+            transform-origin: 50% 50%; /* xoay quanh tâm */
+        }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+/* Icon hoa văn nằm chính giữa viền trên */
+.frame-icon {
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #FFFCE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .frame-icon svg {
+        width: 90%;
+        height: 90%;
+        display: block;
+    }
+
+.frame-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Marlide-Light", serif;
+    font-size: 30px;
+    color: #FFFCE8;
+}
+
+/* Tiêu đề */
+.my-projects-card-title {
+    font-size: 50px;
+    font-family: "Marlide-Light";
+    line-height: 1.3;
+    width: 310px;
+}
+
+/* Mô tả */
+.my-projects-card-desc {
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 0px;
+    text-align: justify;
+    font-family: "Marlide-Light";
+}
+
+/* Tags */
+.my-projects-tags {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    .my-projects-tags span {
+        font-size: 26px;
+        background: #0D7C66;
+        color: #fff;
+        border-radius: 20px;
+        padding: 4px 16px;
+        font-family: "Marlide-Light";
+    }
+
+    .my-projects-tags .tag-more {
+        background: none;
+        color: #0D7C66; /* cho cùng màu chữ chính */
+        padding: 0;
+        border-radius: 0;
+    }
+
+/*=================== FOOTER =====================*/
+
+.footer {
+    width: 100%;
+    height: 825px;
+    background-color: #0d7c66;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fffce8;
+    font-family: "Marlide-Light";
+}
+
+.footer-message {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 100px;
+}
+
+.footer-thank {
+    font-family: "Marlide-Light";
+    font-size: 50px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.5px #FFFCE8;
+    margin: 0 0 30px 0;
+}
+
+.footer-highlight {
+    color: #FFFCE8;
+    font-size: 50px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+    .footer-highlight svg {
+        animation: spin 4s linear infinite; /* xoay vô hạn */
+        transform-origin: 50% 50%; /* xoay quanh tâm */
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+    .footer-desc {
+        font-family: "Marlide-Light";
+        font-size: 30px;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+.footer-bottom {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Marlide-Light";
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "Marlide-Light";
+}
+
+.footer-email,
+.footer-phone {
+    font-size: 30px;
+    color: #FFFCE8;
+    text-decoration: none;
+    font-family: "Marlide-Light";
+}
+
+.footer-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFCE8;
+}
+
+/*========== PROJECT 01 - CRUNCH & DASH FAST FOOD MOBILE ========*/
+
+.project-01-container {
+    display: grid;
+    grid-template-columns: 1fr 450px; /* cột trái rộng hơn, cột phải fix ~450px */
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 1294px;
+    margin: 0 auto;
+    background: #fff;
+    color: #FD0000;
+}
+
+.project-01-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-01-title {
+    font-size: 50px;
+    font-family: "Amoresa";
+    letter-spacing: 2.5px;
+}
+
+.project-01-visit-prototype {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 25px 0
+}
+
+    .project-01-visit-prototype span {
+        font-size: 30px;
+        font-family: "Marlide-Regular";
+    }
+
+.project-01-visit {
+    font-size: 30px;
+    font-family: "Marlide-Regular";
+    color: #FD0000;
+}
+
+.project-01-subtitle {
+    font-size: 28px;
+    font-family: "Marlide-Medium";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.project-01-tools {
+    display: flex;
+    gap: 15px;
+}
+
+.project-01-badge {
+    background: #FD0000;
+    color: #FFFCE8;
+    font-size: 28px;
+    border-radius: 25px;
+    padding: 6px 18px;
+    font-family: "Marlide-Regular";
+    letter-spacing: 1.4px;
+}
+
+.project-01-info {
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    margin-top: 30px;
+}
+
+.project-01-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-01-info-left {
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-01-label {
+    font-family: "Marlide-Medium";
+    letter-spacing: 1.4px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.project-01-text {
+    font-family: "Marlide-Regular";
+    font-size: 28px;
+    letter-spacing: 1.4px;
+}
+
+.project-01-right img {
+    width: 430px;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-01-overview,
+.project-01-problem-solution,
+.project-01-timeline,
+.project-01-design-process,
+.project-01-user-persona,
+.project-01-user-journey-map,
+.project-01-competitor-analysis,
+.project-01-feature-comparison,
+.project-01-user-flow,
+.project-01-style-guide,
+.project-01-test-phase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-01-overview img,
+    .project-01-problem-solution img,
+    .project-01-timeline img,
+    .project-01-design-process img,
+    .project-01-user-persona img,
+    .project-01-user-journey-map img,
+    .project-01-competitor-analysis img,
+    .project-01-feature-comparison img,
+    .project-01-user-flow img,
+    .project-01-style-guide img,
+    .project-01-test-phase img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+.project-01-empathy-map,
+.project-01-mockup-image,
+.project-01-visual-design,
+.project-01-wireframe,
+.project-01-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+
+    .project-01-empathy-map img,
+    .project-01-mockup-image img,
+    .project-01-visual-design img,
+    .project-01-wireframe img,
+    .project-01-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-01-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+    .project-01-next-prev .next:only-child {
+        margin-left: auto; 
+    }
+
+    .project-01-next-prev .prev:only-child {
+        margin-right: auto; 
+    }
+
+/* Nút chung */
+.project-01-btn {
+    font-family: 'Marlide-Medium';
+    font-size: 32px;
+    letter-spacing: 3.2px;
+    color: #FD0000;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #FD0000;
+    padding: 20px 27px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-01-btn:hover {
+        background-color: #FD0000;
+        color: #fff;
+    }
+
+/*=================== FOOTER =====================*/
+
+.project-01-footer {
+    width: 100%;
+    height: 825px;
+    background-color: #FFFCE8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #FD0000;
+    font-family: "Marlide-Light";
+}
+
+.project-01-footer-message {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 100px;
+}
+
+.project-01-footer-thank {
+    font-family: "Marlide-Light";
+    font-size: 50px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.5px #FD0000;
+    margin: 0 0 30px 0;
+}
+
+.project-01-footer-highlight {
+    color: #FD0000;
+    font-size: 50px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+    .project-01-footer-highlight svg {
+        animation: spin 4s linear infinite; /* xoay vô hạn */
+        transform-origin: 50% 50%; /* xoay quanh tâm */
+    }
+
+.project-01-footer-desc {
+    font-family: "Marlide-Light";
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.project-01-footer-bottom {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Marlide-Light";
+}
+
+.project-01-footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "Marlide-Light";
+}
+
+.project-01-footer-email,
+.project-01-footer-phone {
+    font-size: 30px;
+    color: #FD0000;
+    text-decoration: none;
+    font-family: "Marlide-Light";
+}
+
+.project-01-footer-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FD0000;
+}
+
+/*========== PROJECT 02 - THE ROYAL SEA HOTEL MOBILE ========*/
+
+.project-02-container {
+    display: grid;
+    grid-template-columns: 500px 1fr; /* cột phải rộng hơn, cột trái fix ~450px */
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 1294px;
+    margin: 0 auto;
+    background: #fff;
+    color: #7096D1;
+}
+
+.project-02-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-02-title {
+    font-size: 50px;
+    font-family: "Amoresa";
+    letter-spacing: 2.5px;
+}
+
+.project-02-visit-prototype {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 25px 0
+}
+
+    .project-02-visit-prototype span {
+        font-size: 30px;
+        font-family: "Marlide-Regular";
+    }
+
+.project-02-visit {
+    font-size: 30px;
+    font-family: "Marlide-Regular";
+    color: #7096D1;
+}
+
+.project-02-subtitle {
+    font-size: 28px;
+    font-family: "Marlide-Medium";
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.project-02-tools {
+    display: flex;
+    gap: 15px;
+}
+
+.project-02-badge {
+    background: #7096D1;
+    color: #FFFCE8;
+    font-size: 28px;
+    border-radius: 25px;
+    padding: 6px 18px;
+    font-family: "Marlide-Regular";
+    letter-spacing: 1.4px;
+}
+
+.project-02-info {
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    margin-top: 30px;
+}
+
+.project-02-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-02-info-right {
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-02-label {
+    font-family: "Marlide-Medium";
+    letter-spacing: 1.4px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.project-02-text {
+    font-family: "Marlide-Regular";
+    font-size: 28px;
+    letter-spacing: 1.4px;
+}
+
+.project-02-left img {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+.project-02-overview,
+.project-02-problem-solution,
+.project-02-timeline,
+.project-02-design-process,
+.project-02-user-persona,
+.project-02-user-journey-map,
+.project-02-competitor-analysis,
+.project-02-feature-comparison,
+.project-02-user-flow,
+.project-02-style-guide,
+.project-02-test-phase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #fff; /* hoặc màu nền bạn muốn */
+}
+
+    .project-02-overview img,
+    .project-02-problem-solution img,
+    .project-02-timeline img,
+    .project-02-design-process img,
+    .project-02-user-persona img,
+    .project-02-user-journey-map img,
+    .project-02-competitor-analysis img,
+    .project-02-feature-comparison img,
+    .project-02-user-flow img,
+    .project-02-style-guide img,
+    .project-02-test-phase img {
+        max-width: 100%;
+        width: 1294px;
+        height: auto;
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+.project-02-empathy-map,
+.project-02-mockup-image,
+.project-02-visual-design,
+.project-02-wireframe,
+.project-02-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+
+    .project-02-empathy-map img,
+    .project-02-mockup-image img,
+    .project-02-visual-design img,
+    .project-02-wireframe img,
+    .project-02-footer img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.project-02-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1294px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+    .project-02-next-prev .next:only-child {
+        margin-left: auto;
+    }
+
+    .project-02-next-prev .prev:only-child {
+        margin-right: auto;
+    }
+
+/* Nút chung */
+.project-02-btn {
+    font-family: 'Marlide-Medium';
+    font-size: 32px;
+    letter-spacing: 3.2px;
+    color: #7096D1;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #7096D1;
+    padding: 20px 27px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+    /* Hover */
+    .project-02-btn:hover {
+        background-color: #7096D1;
+        color: #fff;
+    }
+
+/*=================== FOOTER =====================*/
+
+.project-02-footer {
+    width: 100%;
+    height: 825px;
+    background-color: #7096D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #FFF;
+    font-family: "Marlide-Light";
+}
+
+.project-02-footer-message {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 100px;
+}
+
+.project-02-footer-thank {
+    font-family: "Marlide-Light";
+    font-size: 50px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.5px #FFF;
+    margin: 0 0 30px 0;
+}
+
+.project-02-footer-highlight {
+    color: #FFF;
+    font-size: 50px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+    .project-02-footer-highlight svg {
+        animation: spin 4s linear infinite; /* xoay vô hạn */
+        transform-origin: 50% 50%; /* xoay quanh tâm */
+    }
+
+.project-02-footer-desc {
+    font-family: "Marlide-Light";
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.project-02-footer-bottom {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    max-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Marlide-Light";
+}
+
+.project-02-footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "Marlide-Light";
+}
+
+.project-02-footer-email,
+.project-02-footer-phone {
+    font-size: 30px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: "Marlide-Light";
+}
+
+.project-02-footer-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+}

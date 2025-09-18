@@ -605,7 +605,7 @@
 
     .my-projects-card .project-btn {
           display: none;
-        animation: slideDown 0.6s ease forwards;
+        animation: slideDown 0.4s ease forwards;
     }
 
     .my-projects-card:hover .project-btn {

@@ -608,16 +608,22 @@
 
     .my-projects-card .project-btn {
      display: none;
+    animation: slideDown 0.4s ease forwards;
     }
 
     .my-projects-card:hover .project-btn {
      display: inline-block;
-    animation: fadeIn 0.4s ease forwards;
     }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .project-btn {

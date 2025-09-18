@@ -607,12 +607,10 @@
        opacity: 0;
       max-height: 0;
       overflow: hidden;
-      transition: all 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {
    opacity: 1;
-  max-height: 200px; /* đủ để chứa nút */
     }
 
 @keyframes dropdownSlide {

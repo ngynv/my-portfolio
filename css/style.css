@@ -596,7 +596,6 @@
         background: #FFFCE8;
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
-        height:600px;
     }
 
         .my-projects-card:hover .frame-icon svg {
@@ -605,10 +604,12 @@
 
     .my-projects-card .project-btn {
        display:none;
+        transition: height 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {
    display: inline-block;
+        height:auto
     }
 
 @keyframes dropdownSlide {

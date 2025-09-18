@@ -579,7 +579,7 @@
     border-radius: 20px;
     padding: 60px 40px 25px;
     width: 365px;
-    max-height: 420px;
+    height: 420px;
     position: relative;
     text-align: center;
     box-shadow: none;
@@ -596,6 +596,7 @@
         background: #FFFCE8;
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
+        max-height:520px;
     }
 
         .my-projects-card:hover .frame-icon svg {

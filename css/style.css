@@ -589,7 +589,7 @@
     align-items: center;
     gap: 25px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
 }
 
     .my-projects-card:hover {
@@ -606,7 +606,7 @@
     .my-projects-card .project-btn {
        opacity: 0;
         max-height:0;
-        transition: height 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {

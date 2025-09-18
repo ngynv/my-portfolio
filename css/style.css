@@ -589,13 +589,14 @@
     align-items: center;
     gap: 25px;
     cursor: pointer;
+    transition: height 0.5s ease-in-out;
 }
 
     .my-projects-card:hover {
         background: #FFFCE8;
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
-        max-height:520px
+        height:520px
     }
 
         .my-projects-card:hover .frame-icon svg {
@@ -603,14 +604,11 @@
         }
 
     .my-projects-card .project-btn {
-opacity: 0;
-  transform: translateY(-30px); /* nút ở trên, giống slide1 */
-  animation: none;
+        display:none;
     }
 
     .my-projects-card:hover .project-btn {
           display: inline-block;
-  animation: dropdownSlide 0.6s ease forwards;
     }
 
 @keyframes dropdownSlide {

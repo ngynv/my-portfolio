@@ -589,6 +589,7 @@
     align-items: center;
     gap: 25px;
     cursor: pointer;
+    overflow: hidden;
 }
 
     .my-projects-card:hover {
@@ -603,12 +604,14 @@
         }
 
     .my-projects-card .project-btn {
-        display: none; /* ban đầu ẩn */
+    opacity: 0;
+    transform: translateY(-20px); /* như khăn đang treo trên cao */
+    transition: all 0.5s ease;
     }
 
     .my-projects-card:hover .project-btn {
-        display: inline-block; /* hover mới hiện */
-        transition: all 0.5s ease-in-out
+    opacity: 1;
+    transform: translateY(0);
     }
 
 .project-btn {

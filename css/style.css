@@ -610,7 +610,7 @@
 
     .my-projects-card:hover .project-btn {
    display: inline-block;
-    height:fit-content;
+    height:600px;
     }
 
 @keyframes dropdownSlide {

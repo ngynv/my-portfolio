@@ -624,7 +624,9 @@
         .my-projects-card:hover .frame-icon svg {
         transform: rotate(90deg);
         }
-
+ .my-projects-card-mobile:hover .frame-icon svg {
+        transform: rotate(90deg);
+        }
     .my-projects-card .project-btn {
         display:none;
         transition: height 0.5s ease-in-out;

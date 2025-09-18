@@ -589,6 +589,9 @@
     align-items: center;
     gap: 25px;
     cursor: pointer;
+    transition: all 0.4s ease; 
+    max-height: 420px; /* ban đầu */
+    overflow: hidden; 
 }
 
     .my-projects-card:hover {
@@ -596,6 +599,7 @@
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
         height: auto;
+        max-height: 600px;
     }
 
         .my-projects-card:hover .frame-icon svg {
@@ -603,18 +607,17 @@
         }
 
     .my-projects-card .project-btn {
-     opacity: 0;
-    transform: translateY(-20px); /* cao hơn để tạo khoảng rơi */
-    transition: all 0.8s ease-in-out (0.25, 1, 0.5, 1);
-    pointer-events: none; /* tránh bị bấm khi chưa hiện */
+     display: none;
     }
 
     .my-projects-card:hover .project-btn {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+     display: inline-block;
+    animation: fadeIn 0.4s ease forwards;
     }
-
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
 .project-btn {
     width: 100%;
     height: 45px;

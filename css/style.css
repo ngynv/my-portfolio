@@ -604,14 +604,16 @@
         }
 
     .my-projects-card .project-btn {
-    opacity: 0;
-    transform: translateY(-20px); /* như khăn đang treo trên cao */
-    transition: all 0.5s ease;
+     opacity: 0;
+    transform: translateY(-30px); /* cao hơn để tạo khoảng rơi */
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    pointer-events: none; /* tránh bị bấm khi chưa hiện */
     }
 
     .my-projects-card:hover .project-btn {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
     }
 
 .project-btn {

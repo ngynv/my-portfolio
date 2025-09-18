@@ -608,6 +608,7 @@
 
     .my-projects-card:hover .project-btn {
         display: inline-block; /* hover mới hiện */
+        transition: all 0.5s ease-in-out
     }
 
 .project-btn {
@@ -620,6 +621,7 @@
     letter-spacing: 1.5px;
     font-size: 30px;
     font-family: "Marlide-Light", serif;
+    cursor: pointer;
 }
 
     .project-btn:hover {

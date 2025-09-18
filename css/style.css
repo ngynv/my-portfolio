@@ -579,7 +579,7 @@
     border-radius: 20px;
     padding: 60px 40px 25px;
     width: 365px;
-    max-height: 420px;
+    height: 420px;
     position: relative;
     text-align: center;
     box-shadow: none;
@@ -596,7 +596,7 @@
         background: #FFFCE8;
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
-        max-height: 600px;
+        height: 600px;
     }
 
         .my-projects-card:hover .frame-icon svg {
@@ -604,14 +604,16 @@
         }
 
     .my-projects-card .project-btn {
-       opacity: 0;
-        max-height:0;
-        transition: height 0.5s ease-in-out;
+        position: absolute;
+    bottom: 20px; /* nằm cuối card */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
     }
 
     .my-projects-card:hover .project-btn {
    opacity: 1;
-    max-height: 200px; 
     }
 
 @keyframes dropdownSlide {

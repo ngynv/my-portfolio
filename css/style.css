@@ -589,10 +589,6 @@
     align-items: center;
     gap: 25px;
     cursor: pointer;
-    /* hiệu ứng mở rộng */
-  max-height: 420px;       /* chiều cao ban đầu */
-  overflow: hidden;
-  transition: all 0.4s ease;
 }
 
     .my-projects-card:hover {
@@ -600,7 +596,6 @@
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
         height: auto;
-        max-height: 520px; 
     }
 
         .my-projects-card:hover .frame-icon svg {
@@ -609,12 +604,11 @@
 
     .my-projects-card .project-btn {
      display: none;
-      transition: opacity 0.4s ease, transform 0.4s ease;
+      transition: opacity 0.4s ease forwards, transform 0.4s ease forwards;
     }
 
     .my-projects-card:hover .project-btn {
     display: inline-block;
-    transition: opacity 0.4s ease, transform 0.4s ease;
     }
 
 @keyframes slideDown {

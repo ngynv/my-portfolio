@@ -599,8 +599,6 @@
     }
 
         .my-projects-card:hover .frame-icon svg {
-        transition: transform 0.5s ease;
-        transform-origin: 50% 50%;
         transform: rotate(90deg);
         }
 

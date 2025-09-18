@@ -591,7 +591,7 @@
     cursor: pointer;
  max-height: 420px;       /* chiều cao ban đầu */
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: max-height 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
 }
 
     .my-projects-card:hover {
@@ -606,14 +606,12 @@
         }
 
     .my-projects-card .project-btn {
-       opacity: 0;
-      transform: translateY(20px); /* để ẩn dưới */
-      transition: opacity 0.4s ease forwards, transform 0.4s ease forwards;
+          display: none;
+        animation: slideDown 0.4s ease forwards;
     }
 
     .my-projects-card:hover .project-btn {
-      opacity: 1;
-      transform: translateY(0);
+          display: inline-block;
     }
 
 @keyframes slideDown {

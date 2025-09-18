@@ -610,7 +610,8 @@
     }
 
     .my-projects-card:hover .project-btn {
-   opacity: 1;
+    opacity: 1;
+    max-height: 200px;
     }
 
 @keyframes dropdownSlide {

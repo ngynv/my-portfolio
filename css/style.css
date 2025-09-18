@@ -596,7 +596,7 @@
         background: #FFFCE8;
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
-        height: 520px;
+        height: fit-content;
     }
 
         .my-projects-card:hover .frame-icon svg {

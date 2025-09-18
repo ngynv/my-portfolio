@@ -579,7 +579,7 @@
     border-radius: 20px;
     padding: 60px 40px 25px;
     width: 365px;
-/*     height: 420px; */
+    height: 420px;
     position: relative;
     text-align: center;
     box-shadow: none;
@@ -589,7 +589,6 @@
     align-items: center;
     gap: 25px;
     cursor: pointer;
-    height: 420px;       /* chiều cao ban đầu */
     transition: max-height 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
 }
 

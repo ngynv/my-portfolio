@@ -604,11 +604,11 @@
         }
 
     .my-projects-card .project-btn {
-        display:none;
+        opacity:0
     }
 
     .my-projects-card:hover .project-btn {
-          display: inline-block;
+      opacity:1
     }
 
 @keyframes dropdownSlide {

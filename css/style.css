@@ -604,12 +604,9 @@
         }
 
     .my-projects-card .project-btn {
-        position: absolute;
-    bottom: 20px; /* nằm cuối card */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
+        opacity: 0; 
+        max-height:0; 
+        transition: height 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {

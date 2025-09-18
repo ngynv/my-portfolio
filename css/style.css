@@ -603,12 +603,12 @@
         }
 
     .my-projects-card .project-btn {
-        display:none;
+        opacity:0;
         transition: height 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {
-   display: inline-block;
+   opacity:1;
     height:auto
     }
 

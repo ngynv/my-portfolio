@@ -605,7 +605,9 @@
 
     .my-projects-card .project-btn {
        opacity: 0;
-  transition: all 0.5s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {

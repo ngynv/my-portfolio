@@ -579,7 +579,7 @@
     border-radius: 20px;
     padding: 60px 40px 25px;
     width: 365px;
-    height: 420px;
+    max-height: 420px;
     position: relative;
     text-align: center;
     box-shadow: none;
@@ -609,7 +609,7 @@
 
     .my-projects-card:hover .project-btn {
    display: inline-block;
-    height:520px;
+    max-height:520px;
     }
 
 @keyframes dropdownSlide {

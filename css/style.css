@@ -604,14 +604,12 @@
         }
 
     .my-projects-card .project-btn {
-        opacity: 0; 
-        max-height:0; 
+        display:none;
         transition: height 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {
-    opacity: 1;
-    max-height: 200px;
+    display:inline-block;
     }
 
 @keyframes dropdownSlide {

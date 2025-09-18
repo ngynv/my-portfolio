@@ -605,6 +605,7 @@
 
     .my-projects-card .project-btn {
        opacity: 0;
+        max-height:0;
         transition: height 0.5s ease-in-out;
     }
 

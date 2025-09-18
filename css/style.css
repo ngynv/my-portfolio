@@ -603,14 +603,13 @@
         }
 
     .my-projects-card .project-btn {
-        opacity: 0;
-        transform: translateY(-30px);
+        display:none;
         transition: height 0.5s ease-in-out;
     }
 
     .my-projects-card:hover .project-btn {
    display: inline-block;
-    height:auto;
+    height:520px;
     }
 
 @keyframes dropdownSlide {

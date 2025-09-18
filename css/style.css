@@ -591,14 +591,36 @@
     cursor: pointer;
     transition: flex-grow 0.6s ease, background 0.4s ease;
 }
-
+.my-projects-card-mobile{
+    background-color: transparent;
+    border: 1px solid #0D7C66;
+    border-radius: 20px;
+    padding: 60px 40px 25px;
+    width: 365px;
+    height: 420px;
+    position: relative;
+    text-align: center;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    transition: flex-grow 0.6s ease, background 0.4s ease;
+}
     .my-projects-card:hover {
         background: #FFFCE8;
         border: none;
         box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
         height: fit-content;
     }
-
+.my-projects-card-mobile:hover {
+        background: #FFFCE8;
+        border: none;
+        box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
+        height: auto;
+    }
         .my-projects-card:hover .frame-icon svg {
         transform: rotate(90deg);
         }

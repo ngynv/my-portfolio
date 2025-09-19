@@ -1475,7 +1475,6 @@
 
     .introduce {
     height: auto; /* bỏ cố định full màn hình */
-    padding: 20px 10px;
   }
 
   .introduce-container {
@@ -1489,35 +1488,52 @@
     width: 100%;
     height: auto;
     left: 0;
+    margin-bottom: -80px;
   }
 
   .introduce-text {
-    font-size: 48px;
-    width: 100%;
+    font-size: 62px;
+    width: fit-content;
     letter-spacing: 2px;
+    padding-top: 20px;
+    justify-self: center;
   }
 
   .introduce-img {
     position: relative;
-    width: 200px;
+    width: 250px;
     height: auto;
     margin: 20px auto;
     display: block;
   }
 
-  .introduce-group-1,
+  .introduce-group-1{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 30px;
+    top: -120px;
+  }
   .introduce-group-2 {
     position: relative;
-    width: auto;
-    left: 0;
-    top: auto;
-    margin: 10px auto;
+    width: fit-content;
+    height: fit-content;
+    left: 115px;
+    top: -80px;
   }
-
+.introduce-name-1{
+    height: 37px;
+    width: 61px;
+    align-content: center;
+}
+.introduce-name-2{
+    height: 37px;
+    align-content: center;
+    width: 220px;
+}
   .introduce-text-name-1,
   .introduce-text-name-2 {
     font-size: 20px;
-    padding: 5px 10px;
   }
 
   .introduce-description {
@@ -1526,12 +1542,11 @@
     font-size: 16px;
     top: auto;
     left: 0;
-    margin-top: 20px;
-    text-align: left;
+    text-align: justify;
   }
 .cv-frame {
     height: auto;
-    padding: 20px 10px;
+    width: fit-content;
   }
 
   .cv-container {
@@ -1542,11 +1557,13 @@
 
   .cv-left,
   .cv-right {
-    width: 100%;
+    width: fit-content;
     margin: 0;
     padding: 20px;
   }
-
+.cv-card{
+    padding:0;
+}
   .cv-title {
     position: relative;
     top: auto;
@@ -1554,11 +1571,12 @@
     width: auto;
     font-size: 22px;
     padding: 6px 14px;
-    margin-bottom: 15px;
+    justify-content: center;
+    height: fit-content;
   }
 
   .cv-content p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 0;
   }
 

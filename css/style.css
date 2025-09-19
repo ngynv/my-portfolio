@@ -1473,28 +1473,201 @@
         font-size: 24px;
     }
 
-    .introduce-container {
-        height: auto;
-        margin: 20px auto;
-    }
+    .introduce {
+    height: auto; /* bỏ cố định full màn hình */
+    padding: 20px 10px;
+  }
 
-    .introduce-text {
-        font-size: 64px;
-        width: 100%;
-    }
+  .introduce-container {
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+  }
 
-    .introduce-img {
-        width: 200px;
-        height: auto;
-        position: relative;
-        margin: 20px auto;
-    }
+  .introduce-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
 
-    .introduce-description {
-        font-size: 16px;
-        width: 100%;
-    }
-    .footer {
+  .introduce-text {
+    font-size: 48px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+
+  .introduce-img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .introduce-group-1,
+  .introduce-group-2 {
+    position: relative;
+    width: auto;
+    left: 0;
+    top: auto;
+    margin: 10px auto;
+  }
+
+  .introduce-text-name-1,
+  .introduce-text-name-2 {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .introduce-description {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    top: auto;
+    left: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+.cv-frame {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .cv-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .cv-left,
+  .cv-right {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .cv-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    font-size: 22px;
+    padding: 6px 14px;
+    margin-bottom: 15px;
+  }
+
+  .cv-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .cv-skills {
+    gap: 10px 20px;
+    justify-content: center;
+  }
+
+  .cv-skills li {
+    font-size: 16px;
+  }
+
+  .cv-side-title {
+    position: relative;
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+  }
+
+  .cv-tech-icons {
+    margin: 20px auto 0;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cv-tech-icons img {
+    width: 40px;
+  }
+
+  .cv-contact-list li {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .cv-contact-list img {
+    width: 18px;
+  }
+.myprojects {
+    height: 70px; /* giảm chiều cao */
+    margin-top: 30px;
+  }
+
+  .myprojects-component {
+    height: 32px;
+    top: 20px;
+  }
+
+  .myprojects-track,
+  .myprojects-frame {
+    gap: 80px; /* giảm khoảng cách giữa các cụm */
+  }
+
+  .myprojects-text {
+    font-size: 20px;
+  }
+.my-projects {
+    padding: 30px 10px;
+  }
+
+  .my-projects-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+
+  .my-projects-grid {
+    grid-template-columns: 1fr; /* 1 cột duy nhất */
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .my-projects-card,
+  .my-projects-card-mobile {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .frame-icon {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+
+  .my-projects-card-title {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .my-projects-card-desc {
+    font-size: 14px;
+  }
+
+  .my-projects-tags span {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .project-btn {
+    font-size: 14px;
+    height: 35px;
+  }
+.footer {
     height: auto;
     padding: 30px 15px;
   }
@@ -1569,218 +1742,6 @@
     }
 
     .introduce {
-    height: auto; /* bỏ cố định full màn hình */
-    padding: 20px 10px;
-  }
-
-  .introduce-container {
-    height: auto;
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  .introduce-header {
-    position: relative;
-    width: 100%;
-    height: auto;
-    left: 0;
-  }
-
-  .introduce-text {
-    font-size: 48px;
-    width: 100%;
-    letter-spacing: 2px;
-  }
-
-  .introduce-img {
-    position: relative;
-    width: 200px;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .introduce-group-1,
-  .introduce-group-2 {
-    position: relative;
-    width: auto;
-    left: 0;
-    top: auto;
-    margin: 10px auto;
-  }
-
-  .introduce-text-name-1,
-  .introduce-text-name-2 {
-    font-size: 20px;
-    padding: 5px 10px;
-  }
-
-  .introduce-description {
-    position: relative;
-    width: 100%;
-    font-size: 16px;
-    top: auto;
-    left: 0;
-    margin-top: 20px;
-    text-align: left;
-  }
-    .cv-frame {
-    height: auto;
-    padding: 20px 10px;
-  }
-
-  .cv-container {
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
-  }
-
-  .cv-left,
-  .cv-right {
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-  }
-
-  .cv-title {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: auto;
-    font-size: 22px;
-    padding: 6px 14px;
-    margin-bottom: 15px;
-  }
-
-  .cv-content p {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-
-  .cv-skills {
-    gap: 10px 20px;
-    justify-content: center;
-  }
-
-  .cv-skills li {
-    font-size: 16px;
-  }
-
-  .cv-side-title {
-    position: relative;
-    writing-mode: horizontal-tb;
-    transform: none;
-    font-size: 18px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    height: auto;
-    width: auto;
-  }
-
-  .cv-tech-icons {
-    margin: 20px auto 0;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .cv-tech-icons img {
-    width: 40px;
-  }
-
-  .cv-contact-list li {
-    font-size: 16px;
-    gap: 10px;
-  }
-
-  .cv-contact-list img {
-    width: 18px;
-  }
-    .myprojects {
-    height: 70px; /* giảm chiều cao */
-    margin-top: 30px;
-  }
-
-  .myprojects-component {
-    height: 32px;
-    top: 20px;
-  }
-
-  .myprojects-track,
-  .myprojects-frame {
-    gap: 80px; /* giảm khoảng cách giữa các cụm */
-  }
-
-  .myprojects-text {
-    font-size: 20px;
-  }
-    .my-projects {
-    padding: 30px 10px;
-  }
-
-  .my-projects-title {
-    font-size: 28px;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-  }
-
-  .my-projects-grid {
-    grid-template-columns: 1fr; /* 1 cột duy nhất */
-    gap: 30px;
-    margin-bottom: 40px;
-  }
-
-  .my-projects-card,
-  .my-projects-card-mobile {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    padding: 20px 15px;
-    gap: 15px;
-  }
-
-  .frame-icon {
-    width: 80px;
-    height: 80px;
-    top: -40px;
-  }
-
-  .my-projects-card-title {
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .my-projects-card-desc {
-    font-size: 14px;
-  }
-
-  .my-projects-tags span {
-    font-size: 12px;
-    padding: 4px 10px;
-  }
-
-  .project-btn {
-    font-size: 14px;
-    height: 35px;
-  }
-}
-
-
-/* ============ TABLET NGANG / LAPTOP NHỎ (769px – 1024px) ============ */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .portfolio-subtitle {
-        font-size: 70px;
-    }
-
-    .portfolio-title {
-        font-size: 160px;
-        letter-spacing: 15px;
-    }
-
-    .portfolio-role {
-        font-size: 24px;
-    }
-
-     .introduce {
     height: auto;
     padding: 30px 15px;
   }
@@ -1836,22 +1797,22 @@
     margin: 20px auto 0;
     text-align: justify;
   }
-    .cv-frame {
+.cv-frame {
     height: auto;
-    padding: 20px 10px;
+    padding: 30px 15px;
   }
 
   .cv-container {
     flex-direction: column;
     height: auto;
-    gap: 20px;
+    gap: 25px;
   }
 
   .cv-left,
   .cv-right {
     width: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 25px;
   }
 
   .cv-title {
@@ -1859,55 +1820,55 @@
     top: auto;
     left: auto;
     width: auto;
-    font-size: 22px;
-    padding: 6px 14px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    padding: 8px 18px;
+    margin-bottom: 20px;
   }
 
   .cv-content p {
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: 18px;
+    margin: 12px 0;
   }
 
   .cv-skills {
-    gap: 10px 20px;
+    gap: 15px 25px;
     justify-content: center;
   }
 
   .cv-skills li {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .cv-side-title {
     position: relative;
     writing-mode: horizontal-tb;
     transform: none;
-    font-size: 18px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
     height: auto;
     width: auto;
   }
 
   .cv-tech-icons {
-    margin: 20px auto 0;
+    margin: 25px auto 0;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
   }
 
   .cv-tech-icons img {
-    width: 40px;
+    width: 50px;
   }
 
   .cv-contact-list li {
-    font-size: 16px;
-    gap: 10px;
+    font-size: 18px;
+    gap: 12px;
   }
 
   .cv-contact-list img {
-    width: 18px;
+    width: 20px;
   }
-    .myprojects {
+.myprojects {
     height: 90px;
     margin-top: 40px;
   }
@@ -2014,5 +1975,296 @@
   .footer-email,
   .footer-phone {
     font-size: 16px;
+  }
+}
+
+
+/* ============ TABLET NGANG / LAPTOP NHỎ (769px – 1024px) ============ */
+@media (min-width: 769px) and (max-width: 1024px) {
+.portfolio-frame {
+    padding: 30px 40px;
+    height: auto; /* cho co giãn theo nội dung */
+  }
+
+  .portfolio-subtitle {
+    font-size: 70px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
+  .portfolio-title {
+    font-size: 160px;
+    letter-spacing: 12px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .portfolio-role {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+
+  .portfolio-footer time {
+    font-size: 28px;
+  }
+
+  .aboutme {
+    height: 100px;
+  }
+
+  .aboutme-component {
+    height: 40px;
+    top: 30px;
+  }
+
+  .aboutme-track,
+  .aboutme-frame {
+    gap: 150px; /* giảm khoảng cách */
+  }
+
+  .aboutme-text {
+    font-size: 28px;
+  }
+/* ABOUT ME */
+  .introduce {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .introduce-container {
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .introduce-text {
+    font-size: 160px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .introduce-img {
+    width: 320px;
+    height: auto;
+    position: relative;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .introduce-group-1,
+  .introduce-group-2 {
+    position: relative;
+    width: auto;
+    margin: 10px auto;
+    left: 0;
+    top: auto;
+  }
+
+  .introduce-text-name-1,
+  .introduce-text-name-2 {
+    font-size: 28px;
+    padding: 6px 12px;
+  }
+
+  .introduce-description {
+    position: relative;
+    width: 85%;
+    font-size: 20px;
+    margin: 20px auto 0;
+    text-align: justify;
+    top: auto;
+    left: auto;
+  }
+
+  /* CV FRAME */
+  .cv-frame {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .cv-container {
+    height: auto;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .cv-left {
+    width: 45%;
+    padding: 25px 20px;
+  }
+
+  .cv-title {
+    font-size: 28px;
+    padding: 8px 16px;
+    left: -180px; /* giảm độ lệch */
+    width: 260px;
+  }
+
+  .cv-content p {
+    font-size: 20px;
+    margin: 12px 0;
+  }
+
+  .cv-skills {
+    gap: 20px 40px;
+  }
+
+  .cv-skills li {
+    font-size: 18px;
+  }
+
+  .cv-right {
+    width: 55%;
+    margin-left: 20px;
+  }
+
+  .cv-side-title {
+    font-size: 22px;
+    padding: 20px 8px;
+    height: 180px;
+    width: 50px;
+  }
+
+  .cv-tech {
+    padding: 25px 20px 20px 60px;
+  }
+
+  .cv-tech-icons {
+    margin-left: 40px;
+    gap: 20px 30px;
+  }
+
+  .cv-tech-icons img {
+    width: 50px;
+  }
+
+  .cv-contact-list li {
+    font-size: 18px;
+    gap: 12px;
+  }
+
+  .cv-contact-list img {
+    width: 20px;
+  }
+/* MARQUEE MY-PROJECTS */
+  .myprojects {
+    height: 100px;
+    margin-top: 40px;
+  }
+
+  .myprojects-component {
+    height: 40px;
+    top: 30px;
+  }
+
+  .myprojects-track,
+  .myprojects-frame {
+    gap: 150px;
+  }
+
+  .myprojects-text {
+    font-size: 32px;
+  }
+
+  /* MY-PROJECTS */
+  .my-projects {
+    padding: 40px 15px;
+  }
+
+  .my-projects-title {
+    font-size: 50px;
+    margin-bottom: 60px;
+    letter-spacing: 5px;
+  }
+
+  .my-projects-grid {
+    gap: 40px 30px;
+    margin-bottom: 60px;
+  }
+
+  .my-projects-card,
+  .my-projects-card-mobile {
+    width: 280px;
+    height: auto;
+    padding: 40px 20px 20px;
+    gap: 15px;
+  }
+
+  .frame-icon {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .frame-icon svg {
+    width: 80%;
+    height: 80%;
+  }
+
+  .frame-number {
+    font-size: 20px;
+  }
+
+  .my-projects-card-title {
+    font-size: 28px;
+    width: auto;
+  }
+
+  .my-projects-card-desc {
+    font-size: 18px;
+  }
+
+  .project-btn {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  .my-projects-tags span {
+    font-size: 18px;
+    padding: 4px 12px;
+  }
+/* FOOTER */
+ .footer {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .footer-message {
+    margin-bottom: 60px;
+  }
+
+  .footer-thank {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  .footer-highlight {
+    font-size: 36px;
+    margin: 0 5px;
+  }
+
+  .footer-desc {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+  }
+
+  .footer-bottom {
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer-email,
+  .footer-phone {
+    font-size: 20px;
   }
 }

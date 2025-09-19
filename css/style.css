@@ -1465,7 +1465,7 @@
     .portfolio-icon{
         top:-20px;
     }
-    .portfolio-icon span{
+    .portfolio-icon svg{
         width: 80px;
     }
     .portfolio-role {

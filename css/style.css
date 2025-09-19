@@ -1522,14 +1522,14 @@
     top: -80px;
   }
 .introduce-name-1{
-    height: 37px;
+    height: 30px;
     width: 61px;
     align-content: center;
 }
 .introduce-name-2{
-    height: 37px;
+    height: 30px;
     align-content: center;
-    width: 220px;
+    width: 200px;
 }
   .introduce-text-name-1,
   .introduce-text-name-2 {
@@ -1552,7 +1552,6 @@
   .cv-container {
     flex-direction: column;
     height: auto;
-    gap: 20px;
   }
 
   .cv-left,
@@ -1560,6 +1559,9 @@
     width: fit-content;
     margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 .cv-card{
     padding:0;
@@ -1570,9 +1572,9 @@
     left: auto;
     width: auto;
     font-size: 22px;
-    padding: 6px 14px;
     justify-content: center;
-    height: fit-content;
+    height: 15px;
+    padding-top: 30px;
   }
 
   .cv-content p {
@@ -1581,14 +1583,17 @@
   }
 
   .cv-skills {
-    gap: 10px 20px;
-    justify-content: center;
+    gap: 10px 50px;
+    justify-content: space-between;
   }
 
   .cv-skills li {
-    font-size: 16px;
+    font-size: 18px;
   }
-
+.cv-tech{
+    padding:0;
+    top: 0 !important;
+}
   .cv-side-title {
     position: relative;
     writing-mode: horizontal-tb;

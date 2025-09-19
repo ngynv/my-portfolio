@@ -1441,3 +1441,143 @@
     height: 1px;
     background-color: #FFF;
 }
+
+/* ============ MOBILE NHỎ (≤480px) ============ */
+@media (max-width: 480px) {
+    .portfolio-frame {
+        padding: 20px;
+        height: auto;
+    }
+
+    .portfolio-subtitle {
+        font-size: 36px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .portfolio-title {
+        font-size: 64px;
+        letter-spacing: 5px;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio-role {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .portfolio-footer time {
+        font-size: 18px;
+    }
+
+    .aboutme {
+        height: 80px;
+    }
+
+    .aboutme-text {
+        font-size: 24px;
+    }
+
+    .introduce-container {
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .introduce-text {
+        font-size: 64px;
+        width: 100%;
+    }
+
+    .introduce-img {
+        width: 200px;
+        height: auto;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .introduce-description {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+/* ============ MOBILE LỚN / TABLET DỌC (481px – 768px) ============ */
+@media (min-width: 481px) and (max-width: 768px) {
+    .portfolio-frame {
+        padding: 30px;
+        height: auto;
+    }
+
+    .portfolio-subtitle {
+        font-size: 50px;
+        justify-content: center;
+    }
+
+    .portfolio-title {
+        font-size: 120px;
+        letter-spacing: 10px;
+        justify-content: center;
+    }
+
+    .portfolio-role {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .portfolio-footer time {
+        font-size: 28px;
+    }
+
+    .aboutme-text {
+        font-size: 32px;
+    }
+
+    .introduce-text {
+        font-size: 100px;
+    }
+
+    .introduce-img {
+        width: 300px;
+        height: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .introduce-description {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
+/* ============ TABLET NGANG / LAPTOP NHỎ (769px – 1024px) ============ */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .portfolio-subtitle {
+        font-size: 70px;
+    }
+
+    .portfolio-title {
+        font-size: 160px;
+        letter-spacing: 15px;
+    }
+
+    .portfolio-role {
+        font-size: 24px;
+    }
+
+    .introduce-text {
+        font-size: 160px;
+    }
+
+    .introduce-img {
+        width: 350px;
+        height: auto;
+    }
+
+    .introduce-description {
+        font-size: 22px;
+        width: 80%;
+    }
+}

@@ -567,10 +567,10 @@
     margin-bottom: 100px;
 }
 
-    .my-projects-grid > :last-child:nth-child(2n+1) {
-        grid-column: span 2;
-        justify-self: center;
-    }
+.my-projects-grid > :last-child:nth-child(2n+1) {
+    grid-column: span 2;
+    justify-self: center;
+}
 
 /* Card project */
 .my-projects-card {
@@ -609,46 +609,31 @@
     cursor: pointer;
     transition: flex-grow 0.6s ease, background 0.4s ease;
 }
-    .my-projects-card:hover {
-        background: #FFFCE8;
-        border: none;
-        box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
-        height: fit-content;
-    }
+.my-projects-card:hover {
+    background: #FFFCE8;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
+    height: fit-content;
+}
 .my-projects-card-mobile:hover {
-        background: #FFFCE8;
-        border: none;
-        box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
-        height: auto;
-    }
-        .my-projects-card:hover .frame-icon svg {
-        transform: rotate(90deg);
-        }
+    background: #FFFCE8;
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(13, 124, 102, 0.25);
+    height: auto;
+}
+.my-projects-card:hover .frame-icon svg {
+    transform: rotate(90deg);
+}
  .my-projects-card-mobile:hover .frame-icon svg {
-        transform: rotate(90deg);
-        }
-    .my-projects-card .project-btn {
-        display:none;
-        transition: height 0.5s ease-in-out;
-    }
+    transform: rotate(90deg);
+}
+.my-projects-card .project-btn {
+    display:none;
+    transition: height 0.5s ease-in-out;
+}
 
-    .my-projects-card:hover .project-btn {
+.my-projects-card:hover .project-btn {
     display:inline-block;
-    }
-
-@keyframes dropdownSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(5px); /* vượt qua 1 chút */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .project-btn {
@@ -693,14 +678,14 @@
     align-items: center;
 }
 
-    .frame-icon svg {
-        width: 90%;
-        height: 90%;
-        display: block;
-         transition: transform 0.5s ease;
-        transform-origin: 50% 50%;
-        transform: rotate(0deg);
-    }
+.frame-icon svg {
+    width: 90%;
+    height: 90%;
+    display: block;
+    transition: transform 0.5s ease;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+}
 
 .frame-number {
     position: absolute;
@@ -742,22 +727,22 @@
     align-items: center;
 }
 
-    .my-projects-tags span {
-        font-size: 30px;
-        background: #0D7C66;
-        color: #fff;
-        border-radius: 20px;
-        padding: 5px 20px;
-        white-space: nowrap;
-        font-family: "Marlide-Light";
-    }
+.my-projects-tags span {
+    font-size: 30px;
+    background: #0D7C66;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    white-space: nowrap;
+    font-family: "Marlide-Light";
+}
 
-    .my-projects-tags .tag-more {
-        background: none;
-        color: #0D7C66; /* cho cùng màu chữ chính */
-        padding: 0;
-        border-radius: 0;
-    }
+.my-projects-tags .tag-more {
+    background: none;
+    color: #0D7C66; /* cho cùng màu chữ chính */
+    padding: 0;
+    border-radius: 0;
+}
 
 /*=================== FOOTER =====================*/
 
@@ -1478,9 +1463,12 @@
     }
 
     .aboutme {
-        height: 80px;
+        height: 60px;
     }
-
+    .aboutme-component{
+        top:0;
+        align-content:center;
+    }
     .aboutme-text {
         font-size: 24px;
     }
@@ -1506,6 +1494,47 @@
         font-size: 16px;
         width: 100%;
     }
+    .footer {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .footer-message {
+    margin-bottom: 40px;
+  }
+
+  .footer-thank {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .footer-highlight {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .footer-bottom {
+    position: relative;
+    bottom: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-email,
+  .footer-phone {
+    font-size: 14px;
+  }
 }
 
 /* ============ MOBILE LỚN / TABLET DỌC (481px – 768px) ============ */
@@ -1539,23 +1568,202 @@
         font-size: 32px;
     }
 
-    .introduce-text {
-        font-size: 100px;
-    }
+    .introduce {
+    height: auto; /* bỏ cố định full màn hình */
+    padding: 20px 10px;
+  }
 
-    .introduce-img {
-        width: 300px;
-        height: auto;
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  .introduce-container {
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+  }
 
-    .introduce-description {
-        font-size: 18px;
-        width: 90%;
-    }
+  .introduce-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+
+  .introduce-text {
+    font-size: 48px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+
+  .introduce-img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .introduce-group-1,
+  .introduce-group-2 {
+    position: relative;
+    width: auto;
+    left: 0;
+    top: auto;
+    margin: 10px auto;
+  }
+
+  .introduce-text-name-1,
+  .introduce-text-name-2 {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .introduce-description {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    top: auto;
+    left: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+    .cv-frame {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .cv-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .cv-left,
+  .cv-right {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .cv-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    font-size: 22px;
+    padding: 6px 14px;
+    margin-bottom: 15px;
+  }
+
+  .cv-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .cv-skills {
+    gap: 10px 20px;
+    justify-content: center;
+  }
+
+  .cv-skills li {
+    font-size: 16px;
+  }
+
+  .cv-side-title {
+    position: relative;
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+  }
+
+  .cv-tech-icons {
+    margin: 20px auto 0;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cv-tech-icons img {
+    width: 40px;
+  }
+
+  .cv-contact-list li {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .cv-contact-list img {
+    width: 18px;
+  }
+    .myprojects {
+    height: 70px; /* giảm chiều cao */
+    margin-top: 30px;
+  }
+
+  .myprojects-component {
+    height: 32px;
+    top: 20px;
+  }
+
+  .myprojects-track,
+  .myprojects-frame {
+    gap: 80px; /* giảm khoảng cách giữa các cụm */
+  }
+
+  .myprojects-text {
+    font-size: 20px;
+  }
+    .my-projects {
+    padding: 30px 10px;
+  }
+
+  .my-projects-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+
+  .my-projects-grid {
+    grid-template-columns: 1fr; /* 1 cột duy nhất */
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .my-projects-card,
+  .my-projects-card-mobile {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .frame-icon {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
+
+  .my-projects-card-title {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .my-projects-card-desc {
+    font-size: 14px;
+  }
+
+  .my-projects-tags span {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .project-btn {
+    font-size: 14px;
+    height: 35px;
+  }
 }
+
 
 /* ============ TABLET NGANG / LAPTOP NHỎ (769px – 1024px) ============ */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1572,17 +1780,239 @@
         font-size: 24px;
     }
 
-    .introduce-text {
-        font-size: 160px;
-    }
+     .introduce {
+    height: auto;
+    padding: 30px 15px;
+  }
 
-    .introduce-img {
-        width: 350px;
-        height: auto;
-    }
+  .introduce-container {
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+  }
 
-    .introduce-description {
-        font-size: 22px;
-        width: 80%;
-    }
+  .introduce-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+
+  .introduce-text {
+    font-size: 100px;
+    width: 100%;
+    letter-spacing: 4px;
+  }
+
+  .introduce-img {
+    position: relative;
+    width: 280px;
+    height: auto;
+    margin: 25px auto;
+    display: block;
+  }
+
+  .introduce-group-1,
+  .introduce-group-2 {
+    position: relative;
+    width: auto;
+    left: 0;
+    top: auto;
+    margin: 12px auto;
+  }
+
+  .introduce-text-name-1,
+  .introduce-text-name-2 {
+    font-size: 28px;
+    padding: 6px 14px;
+  }
+
+  .introduce-description {
+    position: relative;
+    width: 90%;
+    font-size: 18px;
+    top: auto;
+    left: 0;
+    margin: 20px auto 0;
+    text-align: justify;
+  }
+    .cv-frame {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .cv-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .cv-left,
+  .cv-right {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .cv-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    font-size: 22px;
+    padding: 6px 14px;
+    margin-bottom: 15px;
+  }
+
+  .cv-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .cv-skills {
+    gap: 10px 20px;
+    justify-content: center;
+  }
+
+  .cv-skills li {
+    font-size: 16px;
+  }
+
+  .cv-side-title {
+    position: relative;
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+  }
+
+  .cv-tech-icons {
+    margin: 20px auto 0;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cv-tech-icons img {
+    width: 40px;
+  }
+
+  .cv-contact-list li {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .cv-contact-list img {
+    width: 18px;
+  }
+    .myprojects {
+    height: 90px;
+    margin-top: 40px;
+  }
+
+  .myprojects-component {
+    height: 40px;
+    top: 25px;
+  }
+
+  .myprojects-track,
+  .myprojects-frame {
+    gap: 120px; /* khoảng cách vừa phải */
+  }
+
+  .myprojects-text {
+    font-size: 28px;
+  }
+.my-projects {
+    padding: 40px 15px;
+  }
+
+  .my-projects-title {
+    font-size: 42px;
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+  }
+
+  .my-projects-grid {
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    gap: 40px 20px;
+    margin-bottom: 60px;
+  }
+
+  .my-projects-card,
+  .my-projects-card-mobile {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 25px 20px;
+    gap: 18px;
+  }
+
+  .frame-icon {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .my-projects-card-title {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .my-projects-card-desc {
+    font-size: 16px;
+  }
+
+  .my-projects-tags span {
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .project-btn {
+    font-size: 16px;
+    height: 38px;
+  }
+.footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .footer-message {
+    margin-bottom: 50px;
+  }
+
+  .footer-thank {
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  .footer-highlight {
+    font-size: 30px;
+    margin: 0 6px;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .footer-bottom {
+    position: relative;
+    bottom: auto;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-email,
+  .footer-phone {
+    font-size: 16px;
+  }
 }

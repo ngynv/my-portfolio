@@ -1456,13 +1456,18 @@
     }
 
     .portfolio-title {
-        font-size: 64px;
+        font-size: 48px;
         letter-spacing: 5px;
         height: auto;
         justify-content: center;
         text-align: center;
     }
-
+    .portfolio-icon{
+        top:-20px;
+    }
+    .portfolio-icon span{
+        width: 80px;
+    }
     .portfolio-role {
         font-size: 16px;
         padding: 8px 16px;

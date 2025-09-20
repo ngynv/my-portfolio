@@ -1463,14 +1463,18 @@
     }
 
     .aboutme {
-        height: 60px;
+        height: 70px;
     }
     .aboutme-component{
-        top:0;
-        align-content:center;
+       height: 32px;
+        top: 20px;
+    }
+    .aboutme-track,
+    .aboutme-frame{
+        gap: 80px
     }
     .aboutme-text {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .introduce {
@@ -1650,7 +1654,7 @@
     font-size: 20px;
   }
 .my-projects {
-    padding: 30px 10px;
+    padding: 10px;
   }
 
   .my-projects-title {
@@ -1668,20 +1672,22 @@
   .my-projects-card,
   .my-projects-card-mobile {
     width: 100%;
-    max-width: 280px;
-    height: auto;
+    max-width: 200px;
+    height: 180px;
     padding: 20px 15px;
     gap: 15px;
   }
 
   .frame-icon {
-    width: 80px;
-    height: 80px;
-    top: -40px;
+    width: 60px;
+    height: 60px;
+    top: -30px;
   }
-
+.frame-number{
+    font-size: 24px;
+}
   .my-projects-card-title {
-    font-size: 20px;
+    font-size: 24px;
     width: 100%;
   }
 

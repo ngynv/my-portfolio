@@ -1599,22 +1599,25 @@
     writing-mode: horizontal-tb;
     transform: none;
     font-size: 18px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
+    padding: 20px 12px 8px 12px;
     height: auto;
     width: auto;
   }
 
   .cv-tech-icons {
     margin: 20px auto 0;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .cv-tech-icons img {
-    width: 40px;
+    width: 45px;
+      object-fit:contain;
   }
-
+.cv-contact-list{
+    position: relative;
+    margin-top: 45px;
+}
   .cv-contact-list li {
     font-size: 16px;
     gap: 10px;

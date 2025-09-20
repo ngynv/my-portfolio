@@ -1602,6 +1602,7 @@
     padding: 20px 12px 8px 12px;
     height: auto;
     width: auto;
+    top:0;
   }
 
   .cv-tech-icons {
@@ -1614,13 +1615,17 @@
     width: 45px;
       object-fit:contain;
   }
+.cv-contact{
+    padding:0
+}
 .cv-contact-list{
     position: relative;
-    margin-top: 45px;
+    margin-top: 0;
 }
   .cv-contact-list li {
-    font-size: 16px;
+    font-size: 18px;
     gap: 10px;
+    margin-bottom:0;
   }
 
   .cv-contact-list img {

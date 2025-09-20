@@ -420,7 +420,7 @@
     vertical-align: middle;
 }
 
-.cv-tech .cv-side-title {
+.cv-side-title {
     left: 0;
     top: 40px;
 }
@@ -1518,7 +1518,7 @@
     position: relative;
     width: fit-content;
     height: fit-content;
-    left: 115px;
+    left: 170px;
     top: -80px;
   }
 .introduce-name-1{
@@ -1592,7 +1592,7 @@
   }
 .cv-tech{
     padding:0;
-    top: 0 !important;
+    width: 347.35px;
 }
   .cv-side-title {
     position: relative;

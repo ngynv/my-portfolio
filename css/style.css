@@ -332,6 +332,7 @@
 .cv-left {
     overflow: visible;
     width: 40%;
+    height:fit-content;
     background: #0d7c66;
     padding: 40px 60px;
     color: #fffce8;
@@ -345,7 +346,7 @@
 .cv-card {
     font-family: 'Marlide-Light';
     position: relative;
-    padding-top: 90px;
+    padding-top: 110px;
 }
 
 .cv-title {

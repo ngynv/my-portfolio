@@ -401,7 +401,7 @@
 }
 
 /* Side titles dọc */
-.cv-side-title-left .cv-side-title-right{
+.cv-side-title{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     font-family: "Amoresa", Helvetica;
@@ -420,12 +420,12 @@
     vertical-align: middle;
 }
 
-.cv-side-title-left {
+.cv-side-title {
     left: 0;
     top: 40px;
 }
 
-.cv-contact .cv-side-title-right {
+.cv-contact .cv-side-title{
     right: 0;
     bottom: 40px;
     transform: rotate(0deg);

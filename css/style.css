@@ -433,6 +433,7 @@
 
 /* Tech stack */
 .cv-tech {
+    display: flex;
     background: transparent;
     border-radius: 20px;
     padding: 40px 20px 20px 80px; /* chừa chỗ cho title dọc */

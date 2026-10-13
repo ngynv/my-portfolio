@@ -420,10 +420,10 @@
     vertical-align: middle;
 }
 
-.cv-side-title-left {
+/* .cv-side-title-left {
     left: 0;
     top: 40px;
-}
+} */
 
 .cv-contact .cv-side-title-right{
     right: 0;

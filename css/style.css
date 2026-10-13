@@ -401,6 +401,7 @@
 }
 
 /* Side titles dọc */
+.cv-side-title 
 .cv-side-title-right{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -420,23 +421,7 @@
     vertical-align: middle;
 }
 
-.cv-side-title-left {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-family: "Amoresa", Helvetica;
-    font-size: 42px;
-    background: #fffce8;
-    color: #0d7c66;
-    border-radius: 10px;
-    padding: 40px 10px;
-    position: absolute;
-    width: 60px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 260px;
-    line-height: 1;
-    vertical-align: middle;
+.cv-side-title {
     left: 0;
     top: 40px;
 }
